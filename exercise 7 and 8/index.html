@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var devices = ["Keyboard", "mouse", "printer", "Monitor"];
+
+      document.write(
+        `
+        <h1>Devices:</br> ${devices}</h1>
+
+        <h2>Out:</br> ${devices[0]}<h2>
+        <h2>Out:</br> ${devices[1]}<h2>
+        <h2>Out:</br> ${devices[2]}<h2>
+        <h2>Out:</br> ${devices[3]}<h2>
+      `
+      );
+
+      document.write(
+        `
+        <h1>Devices In reverse Order:</br> ${devices} </h1>
+        `
+      );
+
+      devices.reverse();
+
+      document.write(`
+        <h2>Out:</br> ${devices[0]}<h2>
+        <h2>Out:</br> ${devices[1]}<h2>
+        <h2>Out:</br> ${devices[2]}<h2>
+        <h2>Out:</br> ${devices[3]}<h2>
+        
+     
+      `);
+    </script>
+  </body>
+</html>
